@@ -51,7 +51,7 @@ class user
    
   $user1Str =  serialize($user1);
   $user1Str =  'O:4:"user":2:{s:10:"username";s:4:"Adam";s:9:"userage";i:18;}';
-      echo $user1Str;
+ echo $user1Str;
   $user1Str = preg_replace('!s:(\d+):"(.*?)";!e', "'s:'.strlen('$2').':\"$2\";'", $user1Str);
    echo "<br>";
     echo $user1Str;
